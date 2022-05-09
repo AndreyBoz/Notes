@@ -2,12 +2,12 @@
 #include <iostream>
 using namespace std;
 void changeDesc(vector<NOTE>& data, unsigned i) {
-	string desk_t;
+	string desc_t;
 	cout << "Не забудьте поставить точку в конце описания.";
 	cout << "Введите описание заметки: ";
-	getline(cin, desk_t,'.');
-	desk_t.erase(std::remove(desk_t.begin(), desk_t.end(), '\n'), desk_t.end());
-	data[i].changeDesc(desk_t);
+	getline(cin, desc_t,'.');
+	desc_t.erase(std::remove(desc_t.begin(), desc_t.end(), '\n'), desc_t.end());
+	data[i].changeDesc(desc_t);
 };
 void changeNote(vector<NOTE>& data, unsigned i) {
 	string note_t;
