@@ -19,16 +19,16 @@ void changeNote(vector<NOTE>& data, unsigned i) {
 };
 void showNote(vector<NOTE>& data,unsigned& i) {
 	bool f = true;
-	unsigned a = 0;
+	char a;
 	while (f) {
 		system("cls");
 		data[i].printDataNote(i);
 		cout << "Edit Menu: " << endl << "1. Change the description." << endl << "2. Edit the note." << endl << "3. Exit." << endl << "Select an action: ";
 		cin >> a;
 		switch (a) {
-		case 1: changeDesc(data, i); break;
-		case 2: changeNote(data, i); break;
-		case 3: f = false; break;
+		case '1': changeDesc(data, i); break;
+		case '2': changeNote(data, i); break;
+		case '3': f = false; break;
 		default:
 			cout << "Error, you have chosen the wrong action.";
 			break;

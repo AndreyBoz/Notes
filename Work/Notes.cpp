@@ -24,7 +24,7 @@ void delData(vector<NOTE>& data, unsigned ch_d) {
 };
 void showData(vector<NOTE> &data) {
 	bool f = true;
-	unsigned choose = 0;
+	char choose;
 	unsigned ch_n = 0;
 	unsigned ch_d = 0;
 	while (f) {
@@ -36,10 +36,10 @@ void showData(vector<NOTE> &data) {
 		cin >> choose;
 		switch (choose)
 		{
-		case 1: addData(data); break;
-		case 2: cout << "Enter the number of the note you want to delete: "; cin >> ch_d; ch_d--; delData(data, ch_d); break;
-		case 3: cout << "Enter the number of the note you want to view: "; cin >> ch_n; ch_n--; showNote(data, ch_n); break;
-		case 4: f = false; break;
+		case '1': addData(data); break;
+		case '2': cout << "Enter the number of the note you want to delete: "; cin >> ch_d; ch_d--; delData(data, ch_d); break;
+		case '3': cout << "Enter the number of the note you want to view: "; cin >> ch_n; ch_n--; showNote(data, ch_n); break;
+		case '4': f = false; break;
 		default:
 			cout << "There is no such action." << endl;
 			system("pause");
