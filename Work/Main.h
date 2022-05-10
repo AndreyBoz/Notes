@@ -16,8 +16,8 @@ public:
 		this->note = note;
 		this->description=description;
 	};
-	void printData(unsigned i) { cout << "\tНомер: "<< i+1 << "\n\tАвтор: " << author << "\n\tОписание: " << description << "\n\n"; };
-	void printDataNote(unsigned i) { cout << "\tНомер: " << i + 1 << "\n\tАвтор: " << author << "\n\tОписание: " << description << "\n\tЗаметка: " << note << "\n\n"; };
+	void printData(unsigned i) { cout << "\tNote number: "<< i+1 << "\n\tAuthor: " << author << "\n\tDescription: " << description << "\n\n"; };
+	void printDataNote(unsigned i) { cout << "\tNote number: " << i + 1 << "\n\ttAuthor: " << author << "\n\tDescription: " << description << "\n\tNote: " << note << "\n\n"; };
 	void changeDesc(string desc) { description = desc; };
 	void changeNote(string note_t) { note = note_t; };
 	string getAuth() { return author; };

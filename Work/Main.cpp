@@ -10,8 +10,8 @@ int main() {
 	bool t = true;
 	while (t) {
 		unsigned i = 0;
-		cout << "\x1B[2J\x1B[HМеню заметки:" << endl;
-		cout << "1. Показать заметки." << endl << "2. Сохранить" << endl << "3. Загрузить" << endl << "4. Выход" << endl << "Выберите действие: ";
+		cout << "\x1B[2J\x1B[HMain menu:" << endl;
+		cout << "1. Show notes." << endl << "2. Save." << endl << "3. Open." << endl << "4. Exit." << endl << "Select an action: ";
 		cin >> i;
 		switch (i)
 		{
@@ -20,7 +20,7 @@ int main() {
 		case 3: openFile(data); break;
 		case 4: t = false; break;
 		default:
-			cout << "Выбранного действия нет." << endl;
+			cout << "There is no selected action." << endl;
 			break;
 		}
 	}

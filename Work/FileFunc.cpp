@@ -4,12 +4,12 @@ void openFile(vector<NOTE>& data) {
 	system("chcp 1251");
 	string filename;
 	data.clear();
-	cout << "¬ведите название файла: ";
+	cout << "Enter the file name: ";
 	cin >> filename;
 	ifstream fin;
 	fin.open(filename);
 	if (!fin) {
-		cout << "‘айл не найден." << endl;
+		cout << "The file was not found." << endl;
 		system("pause");
 	}
 	else {
@@ -23,7 +23,7 @@ void openFile(vector<NOTE>& data) {
 };
 void saveFile(vector<NOTE>& data) {
 	string filename;
-	cout << "¬ведите название файла: ";
+	cout << "Enter the file name: ";
 	cin >> filename;
 	ofstream fout;
 	fout.open(filename);
